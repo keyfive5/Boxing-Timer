@@ -5,13 +5,23 @@
   },
   "build": {
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "ios": {
+        "credentialsSource": "local"
+      }
     },
     "preview": {
       "distribution": "internal"
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "ascApiKeyPath": "./AuthKey_SVTXG8P9K9.p8",
+        "ascApiKeyId": "SVTXG8P9K9",
+        "ascApiKeyIssuerId": "c46619e9-74be-420a-aaeb-746a63af1a11",
+        "appleTeamId": "D934ZZD92G"
+      }
+    }
   }
 }
