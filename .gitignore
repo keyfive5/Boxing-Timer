@@ -18,6 +18,9 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
+# Apple signing credentials (generated locally, never commit)
+credentials/
+
 # Metro
 .metro-health-check*
 

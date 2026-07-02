@@ -3,13 +3,24 @@
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
+    "@expo-google-fonts/barlow-condensed": "^0.4.1",
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
     "expo": "~57.0.1",
+    "expo-audio": "~57.0.0",
+    "expo-font": "~57.0.0",
+    "expo-haptics": "~57.0.0",
+    "expo-keep-awake": "~57.0.0",
+    "expo-splash-screen": "~57.0.1",
     "expo-status-bar": "~57.0.0",
     "react": "19.2.3",
-    "react-native": "0.86.0"
+    "react-dom": "19.2.3",
+    "react-native": "0.86.0",
+    "react-native-web": "^0.21.2"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
+    "sharp": "^0.35.3",
     "typescript": "~6.0.3"
   },
   "scripts": {
