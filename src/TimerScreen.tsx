@@ -66,10 +66,11 @@ export default function TimerScreen({ settings, onExit }: Props) {
     setAudioModeAsync({ playsInSilentMode: true }).catch(() => {});
   }, []);
 
-  const play = (player: typeof bell) => {
+  const play = async (player: typeof bell) => {
     if (!soundRef.current) return;
+    // seekTo must complete before play, or replays after the first are silent on iOS
     try {
-      player.seekTo(0);
+      await player.seekTo(0);
       player.play();
     } catch {}
   };

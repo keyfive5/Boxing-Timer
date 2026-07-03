@@ -37,7 +37,7 @@ export function buildSegments(s: Settings): Segment[] {
 }
 
 const TICK_MS = 100;
-const WARNING_MS = 10_000;
+const WARNING_MS = 15_000;
 
 // Wall-clock based interval engine: remaining time is always derived from
 // Date.now(), so ticks can be delayed (backgrounding, JS lag) without drift.
@@ -88,7 +88,7 @@ export function useWorkoutTimer(settings: Settings, handlers: TimerHandlers) {
 
       if (
         seg.phase === 'round' &&
-        seg.durMs > WARNING_MS * 2 &&
+        seg.durMs >= WARNING_MS * 2 &&
         remaining <= WARNING_MS &&
         warnedSegRef.current !== idx
       ) {
