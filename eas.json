@@ -20,7 +20,8 @@
         "ascApiKeyPath": "./AuthKey_SVTXG8P9K9.p8",
         "ascApiKeyId": "SVTXG8P9K9",
         "ascApiKeyIssuerId": "c46619e9-74be-420a-aaeb-746a63af1a11",
-        "appleTeamId": "D934ZZD92G"
+        "appleTeamId": "D934ZZD92G",
+        "ascAppId": "6786947702"
       }
     }
   }
